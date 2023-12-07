@@ -1,0 +1,66 @@
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size:80px;
+    color:red;
+}
+.message h2{
+    font-size:30px;
+}
+.redirect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.redirect h3{
+    font-size:25px;
+    
+}
+
+.centered{
+    text-align: center;
+}
+.spinner.loading{
+    display: none;
+    padding:50px;
+    text-align: center;
+}
+.loading-text{
+    width:90px;
+    position: absolute;
+    top:62%;
+    left:47%;
+    text-align: center;
+}
+.spinner.loading::before{
+    content: "";
+    height:150px;
+    width:150px;
+    margin:-35px auto auto -45px;
+    position:absolute;
+    top:calc(50%-45px);
+    left:47%;
+    border-width: 18px;
+    border-style: solid;
+    border-color: #2180c0 #ccc #ccc;
+    border-radius: 100%;
+    animation: rotation .7s infinite linear;
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+#text{
+    font-size:30px;
+    font-weight: bold;
+    margin-right:5%;
+}
